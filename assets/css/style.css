@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/landscape-6724639.jpg') no-repeat center center/cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 11px 200px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.286);
+    backdrop-filter: blur(8px);
+
+}
+
+.logo{
+    font-size: 2rem;
+    color: rgb(233 236 232 / 68%);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    transform: scale(1.05);
+
+}
+.logo span{
+text-shadow: 0 0 25px rgb(0, 0, 0);
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #ffd;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 40px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 13px ;
+    box-shadow: 0 0 15px rgba(23, 24, 22, 0.9);
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(9px);
+    width: 350px;
+    
+    /* Border Animation
+    border: 2px solid transparent;
+    animation: glowing-border 1.5s infinite alternate; */
+}
+.login-box:hover{
+    box-shadow: 0 0 40px  rgba(0, 0, 0, 0.1) ,
+    0 0 65px  rgba(0, 0, 0, 0.1),
+    0 0 85px  rgba(0, 0, 0, 0.1);
+}
+/* Keyframes for Border Animation
+@keyframes glowing-border {
+    0% {
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        border-color: rgba(255, 204, 0, 0.7);
+        box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+    }
+    100% {
+        border-color: rgba(0, 204, 255, 0.7);
+        box-shadow: 0 0 20px rgba(0, 204, 255, 0.7);
+    }
+} */
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    color: #fff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.transparent-btn {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.transparent-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.register-link {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
