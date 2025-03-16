@@ -1,2 +1,2 @@
 # loginform
-loging form
+login form
